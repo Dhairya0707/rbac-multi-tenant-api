@@ -18,9 +18,16 @@
 
 <!-- Build Status -->
 
-[![Node.js CI](https://img.shields.io/github/actions/workflow/status/example/node-ci.yml/badge.svg)](https://github.com/example/rbac/actions)
+[![Node.js CI](https://img.shields.io/github/actions/workflow/status/example/node-ci.yml/badge.svg)](https://github.com/Dhairya0707/rbac-multi-tenant-api/actions)
 [![Coverage](https://img.shields.io/badge/Coverage-85%25-brightgreen)]()
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen)]()
+
+<!-- GitHub Repository -->
+<p align="center">
+  <a href="https://github.com/Dhairya0707/rbac-multi-tenant-api">
+    <img src="https://img.shields.io/badge/GitHub-View_Repository-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+</p>
 
 </div>
 
@@ -60,6 +67,33 @@ This is a robust RBAC backend system designed for SaaS applications requiring mu
 - **JWT Authentication**: Secure token-based authentication with expiration
 - **RESTful API**: Clean, consistent API design following best practices
 - **Static File Serving**: Built-in support for serving frontend assets
+- **Built-in UI for Testing**: Interactive API testing interface included
+
+---
+
+## Quick Start with UI
+
+### Testing the API
+
+This project includes a built-in HTML UI for testing all API endpoints. Once the server is running:
+
+1. **Start the server:**
+
+   ```bash
+   pnpm dev
+   ```
+
+2. **Open the UI in your browser:**
+   ```
+   http://localhost:3000
+   ```
+
+The UI provides:
+
+- Interactive forms for all API endpoints
+- JWT token management (auto-save to localStorage)
+- One-click authentication testing
+- Visual response display
 
 ---
 
@@ -237,8 +271,8 @@ rbac/
 ├── .env                          # Environment variables (not committed)
 ├── server.js                     # Application entry point
 ├── package.json                  # Dependencies and scripts
-├── public/                       # Static assets (frontend)
-│   └── index.html
+├── public/                       # Static assets (frontend UI for testing)
+│   └── index.html                # Interactive API testing UI
 │
 └── src/
     ├── app.js                    # Fastify app configuration
@@ -317,6 +351,11 @@ rbac/
    - Built-in health check endpoint
    - Server uptime tracking
 
+7. **Interactive Testing UI**
+   - Built-in HTML interface for API testing
+   - JWT token management
+   - Visual request/response display
+
 ---
 
 ## Getting Started
@@ -364,6 +403,22 @@ node server.js
 ```
 
 The server will start on `http://localhost:3000`
+
+### Access the Testing UI
+
+Once the server is running, open your browser and navigate to:
+
+```
+http://localhost:3000
+```
+
+This will load the interactive API testing UI where you can:
+
+- Register a new tenant/company
+- Login and get JWT token
+- Test all protected endpoints
+- View and manage projects
+- Invite and manage team members
 
 ---
 
