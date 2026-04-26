@@ -33,6 +33,12 @@
 
 ---
 
+<p align="center">
+  <img src="./rbac_architecture_diagram.png" alt="RBAC System Architecture Diagram" width="100%">
+</p>
+
+---
+
 A production-ready Role-Based Access Control (RBAC) system built with Fastify, providing multi-tenant architecture with granular permission management.
 
 ---
