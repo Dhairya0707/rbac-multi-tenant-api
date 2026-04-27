@@ -6,7 +6,8 @@ import userRoute from "./src/router/user.route.js";
 import projectRoute from "./src/router/project.route.js";
 import tenantRoute from "./src/router/tenant.route.js";
 import rolesRoute from "./src/router/role.route.js";
-connectDB();
+
+await connectDB();
 
 app.get("/api/health", async (req, res) => {
   return res.status(200).send({
